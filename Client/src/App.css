@@ -1,0 +1,50 @@
+/* Reset body margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f3f6; /* Light background like Flipkart */
+}
+
+/* Fix root container */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Ensure left alignment */
+}
+
+/* Fix Navbar Alignment */
+.nav-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0px 20px; /* Adjust padding */
+  background: white;
+  overflow-x: auto;
+  height: 60px; /* Ensure consistent navbar height */
+  border-bottom: 1px solid #ddd; /* Optional: add a light border for separation */
+}
+
+/* Fix navbar item alignment */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Remove unnecessary padding in elements */
+.nav-container img {
+  margin: 0;
+  padding: 0;
+  height: 40px; /* Adjust image size */
+}
+
+.nav-container p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  font-weight: 500;
+}
